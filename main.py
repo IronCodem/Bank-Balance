@@ -3,7 +3,7 @@ import os
 import time
 
 
-
+print
 print("Hello! Welcome to your not-real bank balance!")
 time.sleep(0.5)
 if os.path.exists("savedGames.py"):
@@ -17,8 +17,8 @@ if os.path.exists("savedGames.py"):
   print("You have $"+str(m))
 else:
   n = input(str("What is your name?\n"))
-  m = random.randint(1, 10000)
-  print("Welcome " + n + ", this is your bank balance!")
+  m = random.randint(1, 100)
+  print("Welcome " + n + ", this is your current bank balance!")
   print("you have $" + str(m))
 
   f = open("savedGames" + ".py","w+")
@@ -29,7 +29,7 @@ else:
 time.sleep(1)
 auto = 0
 while True:
-  ch = input(str("type 'get' to get money\nType save to overwrite your last save\n")).lower()
+  ch = input(str("type 'get' to get money\nType 'save' to overwrite your last save\n")).lower()
   if (ch == "get"):
     ma = random.randint(5, 50)
     print("you got $"+str(ma))
