@@ -6,7 +6,7 @@ import time
 print
 print("Hello! Welcome to your not-real bank balance!")
 time.sleep(0.5)
-if os.path.exists("savedGames.py"):
+if os.path.exists("savedGames.js"):
   print("Found Save file...")
   import savedGames
   n = savedGames.name
