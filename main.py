@@ -2,7 +2,7 @@ import random
 import os
 import time
 
-
+# {
 print
 print("Hello! Welcome to your not-real bank balance!")
 time.sleep(0.5)
@@ -56,4 +56,4 @@ while True:
     auto = 0
     print("Game autosaved to savedGames.py!")
     continue
-  
+# }
